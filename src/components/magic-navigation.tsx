@@ -74,8 +74,6 @@ function MagicNavigation() {
     }
   };
 
-  console.log(isMobile);
-
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 768);
@@ -89,7 +87,7 @@ function MagicNavigation() {
 
   return (
     <div className="flex justify-center flex-col items-center">
-      <div className="bg-[#1E2A3B] ----w-[500px] h-20 flex rounded-2xl relative border border-gray-700">
+      <div className="bg-[#1E2A3B] h-20 flex rounded-2xl relative border border-gray-700">
         <div className="flex items-center justify-around w-full">
           <div
             style={{ left: `${isMobile ? onMove() - 2.5 : onMove()}%` }}
